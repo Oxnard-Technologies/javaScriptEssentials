@@ -6,8 +6,9 @@ function submitFeedback() {
     let designation = document.getElementById("designation").value;
     let product = document.getElementById("productType").value;
     let feedback = document.getElementById("feedbackText").value;
+    let experience = document.getElementById("experience").value;
 
-    if(username === "" || age === "" || email === "" || job === "" || designation === "" || feedback === "") {
+    if(username === "" || age === "" || email === "" || job === "" || designation === "" || feedback === "" || experience === "") {
         alert("Please fill in all the required fields before submitting your feedback.")
     }else {
     alert("Thank you for your valuable feedback.");
@@ -19,6 +20,8 @@ function submitFeedback() {
     document.getElementById("userDesignation").innerHTML = designation;
     document.getElementById("userProductChoice").innerHTML = product;
     document.getElementById("userFeedback").innerHTML = feedback;
+    document.getElementById("userExperience").innerHTML = experience;
+    
 
     document.getElementById("userInfo").style.display = 'block';
     }
