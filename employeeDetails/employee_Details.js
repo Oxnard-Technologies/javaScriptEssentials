@@ -34,7 +34,7 @@ function findEmployeeBySpecialization(s) {
     const EmployeeBySpecialization = employees.find(employee => employee.specialization === s);
 
     if (EmployeeBySpecialization) {
-        document.getElementById('employeesDetails').innerHTML = '<p>' + EmployeeBySpecialization.name + ': ' + EmployeeBySpecialization.age + ' - ' + EmployeeBySpecialization.department + ' - $' + EmployeeBySpecialization.salary + '</p>';
+        document.getElementById('employeesDetails').innerHTML = '<p>' + EmployeeBySpecialization.name + ': ' + EmployeeBySpecialization.age + ' - ' + EmployeeBySpecialization.department + ' - $' + EmployeeBySpecialization.salary + ' - ' + EmployeeBySpecialization.specialization + '</p>';
     }else {
         document.getElementById('employeesDetails').innerHTML = 'No record found.'
     }
